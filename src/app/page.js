@@ -5,8 +5,6 @@ export default function Home() {
   const [visible, setVisible] = useState(false);
 
   function clickElev() {
-    console.log("first");
-
     const origin =
       typeof window !== "undefined" && window.location.origin
         ? window.location.origin

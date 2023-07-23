@@ -7,7 +7,12 @@ export default function Home() {
   function clickElev() {
     console.log("first");
 
-    fetch("http://localhost:3000/api/hello")
+    const origin =
+      typeof window !== "undefined" && window.location.origin
+        ? window.location.origin
+        : "";
+
+    fetch(`${origin}/api/hello`)
       .then((r) => r.json())
       .then((res) => {
         console.log(res);
@@ -15,7 +20,7 @@ export default function Home() {
           setVisible(true);
           setTimeout(() => {
             setVisible(false);
-          }, 10000);
+          }, 6000);
         } else {
           alert("점검이 필요합니다.");
         }

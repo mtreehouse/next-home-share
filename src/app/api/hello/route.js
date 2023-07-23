@@ -16,6 +16,5 @@ export async function GET(request) {
     new Error();
   }
   console.log("Execution result:", commands);
-
-  return new Response(commands);
+  return new Response(JSON.stringify(commands));
 }

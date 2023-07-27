@@ -26,7 +26,7 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-24">
+    <main className="flex min-h-screen flex-col items-center p-24 dark:invert">
       <h1 className="font-bold">11층 호출</h1>
       <Image
         onClick={clickElev}

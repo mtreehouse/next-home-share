@@ -1,4 +1,5 @@
 import { TuyaContext } from "@tuya/tuya-connector-nodejs";
+export const revalidate = 0;
 export async function GET(request) {
   const context = new TuyaContext({
     baseUrl: "https://openapi.tuyaus.com",

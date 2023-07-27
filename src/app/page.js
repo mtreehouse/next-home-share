@@ -26,7 +26,7 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-24 dark:invert">
+    <main className="flex min-h-screen flex-col items-center p-24">
       <h1 className="font-bold">11층 호출</h1>
       <Image
         onClick={clickElev}
@@ -34,7 +34,7 @@ export default function Home() {
         alt="elevator Logo"
         width={500}
         height={24}
-        className="active:scale-95 hover:translate-y-1 "
+        className="active:scale-95 hover:translate-y-1 dark:invert"
       />
       <span
         className={
@@ -49,7 +49,7 @@ export default function Home() {
         alt="elevator Logo"
         width={600}
         height={24}
-        className="absolute bottom-0"
+        className="absolute bottom-0 dark:invert"
       />
     </main>
   );

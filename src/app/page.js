@@ -51,6 +51,16 @@ export default function Home() {
         height={24}
         className="absolute bottom-0 dark:invert"
       />
+      <Image
+        src="/kakao.png"
+        alt="kakao Logo"
+        width={60}
+        height={24}
+        className="absolute top-0 left-0 dark:invert"
+        onClick={() => {
+          window.open("https://open.kakao.com/o/gW2YUIxf");
+        }}
+      />
     </main>
   );
 }
